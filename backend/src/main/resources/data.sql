@@ -19,3 +19,5 @@ INSERT INTO tb_oferta (edicao, momento_Inicial, momento_Final, curso_id) VALUES 
 INSERT INTO tb_oferta (edicao, momento_Inicial, momento_Final, curso_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2022-11-25T03:00:00Z', TIMESTAMP WITH TIME ZONE '2023-11-25T03:00:00Z', 1);
 
 
+INSERT INTO tb_galerias (nome, descricao, posicao, img_Uri, tipo, oferta_id) VALUES ('CCS Mini Hemp', 'Última etapa realizada no BANKS', 1, 'https://www.publicdomainpictures.net/pictures/390000/nahled/course-introduction.jpg', 1, 1);
+
