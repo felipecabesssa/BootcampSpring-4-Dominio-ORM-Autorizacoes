@@ -19,3 +19,5 @@ INSERT INTO tb_oferta (edicao, momento_Inicial, momento_Final, curso_id) VALUES 
 INSERT INTO tb_oferta (edicao, momento_Inicial, momento_Final, curso_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2022-11-25T03:00:00Z', TIMESTAMP WITH TIME ZONE '2023-11-25T03:00:00Z', 1);
 
 
+INSERT INTO tb_enrollment (usuario_id, oferta_id, enroll_Moment, refund_Moment, avaliable, only_Update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2022-10-25T13:00:00Z', null, true, false);
+INSERT INTO tb_enrollment (usuario_id, oferta_id, enroll_Moment, refund_Moment, avaliable, only_Update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2022-10-25T13:00:00Z', null, true, false);
