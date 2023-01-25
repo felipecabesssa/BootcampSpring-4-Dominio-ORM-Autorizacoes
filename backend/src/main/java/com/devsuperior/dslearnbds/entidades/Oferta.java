@@ -2,6 +2,8 @@ package com.devsuperior.dslearnbds.entidades;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import javax.persistence.Column;
@@ -11,6 +13,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -30,6 +33,9 @@ public class Oferta implements Serializable{
 	@ManyToOne
 	@JoinColumn(name = "curso_id")
 	private Curso curso;
+	
+	@OneToMany(mappedBy = "oferta")
+	private List<Resource> resources = new ArrayList<>();
 	
 	public Oferta() {
 	}
@@ -81,6 +87,10 @@ public class Oferta implements Serializable{
 
 	public void setCurso(Curso curso) {
 		this.curso = curso;
+	}
+
+	public List<Resource> getResources() {
+		return resources;
 	}
 
 	@Override
